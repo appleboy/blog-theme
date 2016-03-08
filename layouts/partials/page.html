@@ -1,0 +1,26 @@
+{{ if .Title }}
+<header class="header-page">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <div class="page-heading">
+	    <h1>{{ .Title }}</h1>
+	    {{ if .Description }}
+	    <hr class="small">
+	    <span class="page-subheading">{{ .Description }}</span>
+	    {{ end }}
+	  </div>
+    </div>
+  </div>
+</header>
+{{ end }}
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    {{ .Content }}
+	{{ if .Site.DisqusShortname }}
+    <div class="disqus-comments">
+	  {{ template "_internal/disqus.html" . }}
+    </div>
+	{{ end }}
+  </div>
+</div>
