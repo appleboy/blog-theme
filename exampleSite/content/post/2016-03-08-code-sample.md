@@ -1,6 +1,6 @@
 ---
 title: Code Sample
-description: Using Pygments
+subtitle: Using Pygments
 date: 2016-03-08
 ---
 

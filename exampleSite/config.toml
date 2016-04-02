@@ -8,6 +8,7 @@ pygmentsUseClasses = true
 
 [Params]
   logo = "img/avatar-icon.png"
+  subtitle = "Build a beautiful and simple website in minutes"
 
 [Author]
   name = "Some Person"

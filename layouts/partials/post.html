@@ -1,46 +1,31 @@
-<header class="header-post">
+{{ partial "header.html" . }}
+
+<div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div class="post-heading">
-        <h1>{{ .Title }}</h1>
-        {{ if .Description }}
-        <h2 class="post-subheading">{{ .Description }}</h2>
+      <article role="main" class="blog-post">
+          {{ .Content }}
+      </article>
+
+      <ul class="pager blog-pager">
+        {{ if .PrevInSection }}
+        <li class="previous">
+          <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; Previous Post</a>
+        </li>
         {{ end }}
-        <span class="post-meta">Posted on {{ .Date.Format "January 2, 2006" }}</span>
+        {{ if .NextInSection }}
+        <li class="next">
+          <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">Next Post &rarr;</a>
+        </li>
+        {{ end }}
+      </ul>
+
+      {{ if .Site.DisqusShortname }}
+      <div class="disqus-comments">
+        {{ template "_internal/disqus.html" . }}
       </div>
-     </div>
-  </div>
-</header>
-
-<article>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  {{ .Content }}
-	</div>
-  </div>
-</article>
-
-<div class="row">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    <ul class="pager blog-pager">
-      {{ if .PrevInSection }}
-      <li class="previous">
-        <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; Previous Post</a>
-      </li>
       {{ end }}
-      {{ if .NextInSection }}
-      <li class="next">
-        <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">Next Post &rarr;</a>
-      </li>
-      {{ end }}
-    </ul>
+
+    </div>
   </div>
 </div>
-
-{{ if .Site.DisqusShortname }}
-<div class="row disqus-comments">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    {{ template "_internal/disqus.html" . }}
-  </div>
-</div>
-{{ end }}

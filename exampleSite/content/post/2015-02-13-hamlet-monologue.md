@@ -1,6 +1,6 @@
 ---
 title: To be
-description: ... or not to be?
+subtitle: ... or not to be?
 date: 2015-02-13
 ---
 
