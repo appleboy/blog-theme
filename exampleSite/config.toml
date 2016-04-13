@@ -18,6 +18,8 @@ pygmentsUseClasses = true
   twitter = "username"
   linkedin = "pub/username/X/YYY/ZZZ"
   stackoverflow = "XXXXXXX/username"
+  soundcloud = "username"
+  wikipedia = "username"
 
 [[menu.main]]
     name = "Blog"

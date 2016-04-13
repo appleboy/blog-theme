@@ -63,6 +63,26 @@
             </a>
           </li>
           {{ end }}
+          {{ if .Site.Author.soundcloud }}
+          <li>
+            <a href="https://soundcloud.com/{{ .Site.Author.soundcloud }}" title="SoundCloud">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
+          {{ if .Site.Author.wikipedia }}
+          <li>
+            <a href="https://wikipedia.org/wiki/User:{{ .Site.Author.wikipedia }}" title="Wikipedia">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-wikipedia-w fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
 
     		  <li>
       			<a href="{{ .Site.BaseURL}}index.xml" title="RSS">
