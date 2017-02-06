@@ -9,6 +9,8 @@
 
     <div role="main" class="container main-content">
 
+      {{ partial "header.html" . }}
+	  
       {{ if eq .Type "post" }}
         {{ partial "post.html" . }}
       {{ else if eq .Type "page" }}
