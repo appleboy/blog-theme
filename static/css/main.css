@@ -247,13 +247,14 @@ footer .list-inline {
   margin: 0;
   padding: 0;
 }
+footer .credits {
+  text-align: center;
+}
 footer .copyright {
   font-family: Open Sans;
-  text-align: center;
   margin-bottom: 0;
 }
 footer .theme-by {
-  text-align: center;
   margin: 10px 0 0;
 }
 

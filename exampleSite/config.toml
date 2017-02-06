@@ -1,4 +1,4 @@
-baseurl = "http://username.github.io"
+baseurl = "https://username.github.io"
 languageCode = "en-us"
 title = "Beautiful Hugo"
 theme = "beautifulhugo"
@@ -7,8 +7,10 @@ pygmentsUseClasses = true
 #googleAnalytics = "XXX"
 
 [Params]
-  logo = "img/avatar-icon.png"
   subtitle = "Build a beautiful and simple website in minutes"
+  logo = "img/avatar-icon.png"
+  favicon = "img/favicon.ico"
+  commit = false
 
 [Author]
   name = "Some Person"
@@ -17,9 +19,9 @@ pygmentsUseClasses = true
   github = "username"
   twitter = "username"
   linkedin = "pub/username/X/YYY/ZZZ"
-  stackoverflow = "XXXXXXX/username"
+  stackoverflow = "users/XXXXXXX/username"
   soundcloud = "username"
-  wikipedia = "username"
+  wikipedia = "User:username"
 
 [[menu.main]]
     name = "Blog"
