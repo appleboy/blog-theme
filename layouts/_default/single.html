@@ -9,12 +9,17 @@
 
     <div role="main" class="container main-content">
 
+      {{ partial "header_wp.html" . }}
+	  
       {{ if eq .Type "post" }}
         {{ partial "post.html" . }}
       {{ else if eq .Type "page" }}
         {{ partial "page.html" . }}
       {{ else }}
-        NO MATCHING PARTIAL
+        <div class="container" role="main">
+          NO MATCHING PARTIAL
+          {{.Content}}
+        </div>
       {{ end }}
 
     </div>

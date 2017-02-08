@@ -1,5 +1,5 @@
 <footer>
-  <div class="container beautiful-jekyll-footer">
+  <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
@@ -55,7 +55,7 @@
           {{ end }}
 	    	  {{ if .Site.Author.stackoverflow }}
           <li>
-            <a href="https://stackoverflow.com/users/{{ .Site.Author.stackoverflow }}" title="StackOverflow">
+            <a href="https://stackoverflow.com/{{ .Site.Author.stackoverflow }}" title="StackOverflow">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
@@ -75,7 +75,7 @@
           {{ end }}
           {{ if .Site.Author.wikipedia }}
           <li>
-            <a href="https://wikipedia.org/wiki/User:{{ .Site.Author.wikipedia }}" title="Wikipedia">
+            <a href="https://wikipedia.org/wiki/{{ .Site.Author.wikipedia }}" title="Wikipedia">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-wikipedia-w fa-stack-1x fa-inverse"></i>
@@ -94,28 +94,28 @@
     		  </li>		
 
         </ul>
-        <p class="copyright text-muted">
-    		  {{ .Site.Author.name }}
-    		  &nbsp;&bull;&nbsp;
-    		  {{ .Site.LastChange.Format "2006" }}
+        <p class="credits copyright text-muted">
+    	  {{ .Site.Author.name }}
+    	  &nbsp;&bull;&nbsp;
+    	  {{ .Site.LastChange.Format "2006" }}
     		  
-    		  {{ if .Site.Title }}
-    		  &nbsp;&bull;&nbsp;
-    		  <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    		  {{ end }}
+    	  {{ if .Site.Title }}
+    	  &nbsp;&bull;&nbsp;
+    	  <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    	  {{ end }}
   	    </p>
-  	        <!-- Please don't remove this, keep my open source work credited :) -->
-    		<p class="theme-by text-muted">
-    		  Theme by
-    		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-    		</p>
+  	    <!-- Please don't remove this, keep my open source work credited :) -->
+    	<p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v{{ .Hugo.Version }}</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/1138-4EB/beautifulhugo">Beautiful Hugo</a>
+          {{ with .Site.Params.commit }}&nbsp;&bull;&nbsp;[<a href="{{.}}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]{{ end }}
+    	</p>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="{{ .Site.BaseURL }}js/jquery-1.11.2.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/main.js"></script>
+<script src="{{ .Site.BaseURL }}/js/jquery-1.11.2.min.js"></script>
+<script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
+<script src="{{ .Site.BaseURL }}/js/main.js"></script>
 
 {{ template "_internal/google_analytics.html" . }}
