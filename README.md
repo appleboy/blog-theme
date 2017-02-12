@@ -18,10 +18,20 @@ This theme is designed to look great on both large-screen and small-screen (mobi
 
 ### Syntax highlighting
 
-This theme has support for `highlight` shortcode (with Pygments),
+This theme has support for both server side and client side highlighting.
+
+#### Server side syntax highlighting
+
+Use the `highlight` shortcode (with Pygments),
 see [the Hugo documentation](http://gohugo.io/extras/highlighting/) for more information.
 
 To use this feature install Pygments (`pip install Pygments`) and add `pygmentsuseclasses = true` to your `config.toml`.
+
+#### Client side syntax highlighting
+
+Use triple backticks "```" or triple tilde "~~~" around code blocks.
+
+Client side highlighting does not require pygments to be installed.
 
 ### Disqus support
 
