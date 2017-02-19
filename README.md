@@ -29,7 +29,7 @@ To use this feature install Pygments (`pip install Pygments`) and add `pygmentsu
 
 #### Client side syntax highlighting
 
-Use triple backticks "```" or triple tilde "~~~" around code blocks.
+Use triple backticks ( ``` ) or triple tilde ( ~~~ ) around code blocks.
 
 Client side highlighting does not require pygments to be installed.
 
