@@ -25,6 +25,7 @@ pygmentCodeFences = true
   instagram = "username"
   youtube = "user/username" # or channel/channelname
   spotify = "username"
+  itchio = "username"
 
 [[menu.main]]
     name = "Blog"

@@ -103,6 +103,16 @@
             </a>
           </li>
           {{ end }}
+          {{ if .Site.Author.itchio }}
+          <li>
+            <a href="https://itch.io/profile/{{ .Site.Author.itchio }}" title="Itch.io">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
 
     		  <li>
       			<a href="{{ .Site.BaseURL}}index.xml" title="RSS">
