@@ -19,10 +19,12 @@ pygmentCodeFences = true
   facebook = "username"
   github = "username"
   twitter = "username"
-  linkedin = "pub/username/X/YYY/ZZZ"
+  linkedin = "username"
   stackoverflow = "users/XXXXXXX/username"
   soundcloud = "username"
-  wikipedia = "User:username"
+  instagram = "username"
+  youtube = "user/username" # or channel/channelname
+  spotify = "username"
 
 [[menu.main]]
     name = "Blog"

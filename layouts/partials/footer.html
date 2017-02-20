@@ -45,7 +45,7 @@
           {{ end }}
 		      {{ if .Site.Author.linkedin }}
           <li>
-            <a href="https://linkedin.com/{{ .Site.Author.linkedin }}" title="LinkedIn">
+            <a href="https://linkedin.com/in/{{ .Site.Author.linkedin }}" title="LinkedIn">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -73,12 +73,32 @@
             </a>
           </li>
           {{ end }}
-          {{ if .Site.Author.wikipedia }}
+          {{ if .Site.Author.instagram }}
           <li>
-            <a href="https://wikipedia.org/wiki/{{ .Site.Author.wikipedia }}" title="Wikipedia">
+            <a href="https://www.instagram.com/{{ .Site.Author.instagram }}" title="Instagram">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-wikipedia-w fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }} 
+          {{ if .Site.Author.youtube }}
+          <li>
+            <a href="https://www.youtube.com/{{ .Site.Author.youtube }}" title="Youtube">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
+          {{ if .Site.Author.spotify }}
+          <li>
+            <a href="https://open.spotify.com/user/{{ .Site.Author.spotify }}" title="Spotify">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
@@ -106,7 +126,7 @@
   	    </p>
   	    <!-- Please don't remove this, keep my open source work credited :) -->
     	<p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v{{ .Hugo.Version }}</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/1138-4EB/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v{{ .Hugo.Version }}</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           {{ with .Site.Params.commit }}&nbsp;&bull;&nbsp;[<a href="{{.}}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]{{ end }}
     	</p>
       </div>
