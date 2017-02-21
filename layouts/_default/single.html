@@ -6,22 +6,17 @@
   <body>
 
     {{ partial "nav.html" . }}
+    {{ partial "header_wp.html" . }}
 
-    <div role="main" class="container main-content">
-
-      {{ partial "header_wp.html" . }}
-	  
+    <div class="container" role="main">	  
       {{ if eq .Type "post" }}
         {{ partial "post.html" . }}
       {{ else if eq .Type "page" }}
         {{ partial "page.html" . }}
       {{ else }}
-        <div class="container" role="main">
-          NO MATCHING PARTIAL
-          {{.Content}}
-        </div>
+        NO MATCHING PARTIAL
+        {{.Content}}
       {{ end }}
-
     </div>
 
     {{ partial "footer.html" . }}
