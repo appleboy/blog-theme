@@ -53,6 +53,16 @@
             </a>
           </li>
           {{ end }}
+          {{ if .Site.Author.xing }}
+          <li>
+            <a href="https://www.xing.com/profile/{{ .Site.Author.xing }}" title="Xing">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-xing fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
 	    	  {{ if .Site.Author.stackoverflow }}
           <li>
             <a href="https://stackoverflow.com/{{ .Site.Author.stackoverflow }}" title="StackOverflow">
@@ -144,10 +154,10 @@
   </div>
 </footer>
 
-<script src="{{ .Site.BaseURL }}/js/jquery-1.11.2.min.js"></script>
-<script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="{{ .Site.BaseURL }}/js/main.js"></script>
-<script src="{{ .Site.BaseURL }}js/highlight.min.js"></script>
+<script src="{{ .Site.BaseURL }}/js/highlight.min.js"></script>
 <script>
   hljs.initHighlightingOnLoad();
 </script>
