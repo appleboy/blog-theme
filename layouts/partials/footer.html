@@ -3,12 +3,32 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
+          {{ if .Site.Author.email }}
+          <li>
+            <a href="mailto:{{ .Site.Author.email }}" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
           {{ if .Site.Author.facebook }}
           <li>
             <a href="https://www.facebook.com/{{ .Site.Author.facebook }}" title="Facebook">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
+          {{ if .Site.Author.googleplus }}
+          <li>
+            <a href="https://www.plus.google.com/{{ .Site.Author.googleplus }}" title="Google+">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
@@ -33,12 +53,12 @@
             </a>
           </li>
           {{ end }}
-		      {{ if .Site.Author.email }}
+          {{ if .Site.Author.reddit }}
           <li>
-            <a href="mailto:{{ .Site.Author.email }}" title="Email me">
+            <a href="https://reddit.com/u/{{ .Site.Author.reddit }}" title="Reddit">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-reddit-alien fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
@@ -73,16 +93,16 @@
             </a>
           </li>
           {{ end }}
-          {{ if .Site.Author.soundcloud }}
+          {{ if .Site.Author.snapchat }}
           <li>
-            <a href="https://soundcloud.com/{{ .Site.Author.soundcloud }}" title="SoundCloud">
+            <a href="https://www.snapchat.com/add/{{ .Site.Author.snapchat }}" title="Snapchat">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
-          {{ end }}
+          {{ end }} 
           {{ if .Site.Author.instagram }}
           <li>
             <a href="https://www.instagram.com/{{ .Site.Author.instagram }}" title="Instagram">
@@ -103,12 +123,32 @@
             </a>
           </li>
           {{ end }}
+          {{ if .Site.Author.soundcloud }}
+          <li>
+            <a href="https://soundcloud.com/{{ .Site.Author.soundcloud }}" title="SoundCloud">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
           {{ if .Site.Author.spotify }}
           <li>
             <a href="https://open.spotify.com/user/{{ .Site.Author.spotify }}" title="Spotify">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
+          {{ if .Site.Author.bandcamp }}
+          <li>
+            <a href="https://{{ .Site.Author.bandcamp }}.bandcamp.com/" title="Bandcamp">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-bandcamp fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>

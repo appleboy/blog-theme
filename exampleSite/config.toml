@@ -17,16 +17,20 @@ pygmentCodeFences = true
   name = "Some Person"
   email = "youremail@domain.com"
   facebook = "username"
+  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
   github = "username"
   twitter = "username"
+  reddit = "username"
   linkedin = "username"
+  xing = "username"
   stackoverflow = "users/XXXXXXX/username"
-  soundcloud = "username"
+  snapchat = "username"
   instagram = "username"
   youtube = "user/username" # or channel/channelname
+  soundcloud = "username"
   spotify = "username"
+  bandcamp = "username"
   itchio = "username"
-  xing = "username"
 
 [[menu.main]]
     name = "Blog"
