@@ -51,7 +51,6 @@
               <p class="post-meta">
                 Posted on {{ .Date.Format "January 2, 2006" }}
               </p>
-            
               <div class="post-entry">
               {{ if .Truncated }}
                 {{ .Summary }}
@@ -60,7 +59,15 @@
                 {{ .Content }}
               {{ end }}
               </div>
-            
+
+	      {{ if .Params.tags }}
+	        <span class="post-meta">
+	          {{ range .Params.tags }}
+	            #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+		  {{ end }}
+	        </span>
+	      {{ end }}
+
              </article>
             {{ end }}
           </div>

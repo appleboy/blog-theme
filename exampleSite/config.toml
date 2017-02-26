@@ -26,14 +26,19 @@ pygmentCodeFences = true
   name = "Some Person"
   email = "youremail@domain.com"
   facebook = "username"
+  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
   github = "username"
   twitter = "username"
+  reddit = "username"
   linkedin = "username"
+  xing = "username"
   stackoverflow = "users/XXXXXXX/username"
-  soundcloud = "username"
+  snapchat = "username"
   instagram = "username"
   youtube = "user/username" # or channel/channelname
+  soundcloud = "username"
   spotify = "username"
+  bandcamp = "username"
   itchio = "username"
 
 [[menu.main]]
@@ -60,3 +65,8 @@ pygmentCodeFences = true
     parent = "samples"
     name = "Test Markdown"
     url = "/post/2015-02-20-test-markdown"
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 3

@@ -2,6 +2,7 @@
 title: Code Sample
 subtitle: Using Pygments or Highlight.js
 date: 2016-03-08
+tags: ["example", "code"]
 ---
 
 The following are two code samples using syntax highlighting.
