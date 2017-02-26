@@ -51,3 +51,8 @@ pygmentCodeFences = true
     parent = "samples"
     name = "Test Markdown"
     url = "/post/2015-02-20-test-markdown"
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 3

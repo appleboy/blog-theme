@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    {{ partial "nav.html" . }}
+
+    <header class="header-section ">
+      <div class="intro-header no-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h2>{{ .Title }}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" role="main">
+      <article class="post-preview">
+        {{ range $key, $value := .Data.Terms.ByCount }}
+        <li>
+          <a href="/tags/{{ $value.Name | urlize }}">
+            {{ $value.Name }}({{ $value.Count }})</a>
+        </li>
+        {{ end }}
+      </article>
+    </div>
+
+  </body>
+</html>
