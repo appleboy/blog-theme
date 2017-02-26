@@ -13,6 +13,15 @@ pygmentCodeFences = true
   favicon = "img/favicon.ico"
   commit = false
 
+[[Params.bigimg]]
+  src = "img/path.jpg"
+  desc = "Path"
+
+# if you add more than one bigimg they will cycle through every 10 seconds
+#[[Params.bigimg]]
+#  src = "img/path.jpg"
+#  desc = "Another Path"
+
 [Author]
   name = "Some Person"
   email = "youremail@domain.com"
