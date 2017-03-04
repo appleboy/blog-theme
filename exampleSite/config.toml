@@ -12,6 +12,7 @@ pygmentCodeFences = true
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   commit = false
+  dateFormat = "January 2, 2006"
 
 [[Params.bigimg]]
   src = "img/path.jpg"
