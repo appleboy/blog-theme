@@ -25,16 +25,7 @@ How about a yummy crepe?
 
 ![Crepe](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
+Here's a code chunk with syntax highlighting:
 
 ```javascript
 var foo = function(x) {
@@ -42,12 +33,3 @@ var foo = function(x) {
 }
 foo(3)
 ```
-
-And here is the same code yet again but with line numbers:
-
-{{< highlight python linenos >}}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{{</ highlight >}}
