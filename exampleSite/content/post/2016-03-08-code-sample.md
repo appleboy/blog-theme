@@ -29,3 +29,14 @@ The following is a code sample using the "highlight" shortcode provided in Hugo.
     sum = parseInt(num1) + parseInt(num2) // "+" means "add"
     alert("Sum = " + sum)  // "+" means combine into a string
 {{</ highlight >}}
+
+
+And here is the same code with line numbers:
+
+{{< highlight javascript "linenos=inline">}}
+    var num1, num2, sum
+    num1 = prompt("Enter first number")
+    num2 = prompt("Enter second number")
+    sum = parseInt(num1) + parseInt(num2) // "+" means "add"
+    alert("Sum = " + sum)  // "+" means combine into a string
+{{</ highlight >}}
