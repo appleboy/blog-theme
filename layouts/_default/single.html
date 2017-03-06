@@ -8,7 +8,7 @@
     {{ partial "nav.html" . }}
     {{ partial "header_wp.html" . }}
 
-    <div class="container" role="main">	  
+    <div class="container" role="main">
       {{ if eq .Type "post" }}
         {{ partial "post.html" . }}
       {{ else if eq .Type "page" }}

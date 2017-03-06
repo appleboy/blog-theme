@@ -43,7 +43,7 @@
             </a>
           </li>
           {{ end }}
-		      {{ if .Site.Author.twitter }}
+          {{ if .Site.Author.twitter }}
           <li>
             <a href="https://twitter.com/{{ .Site.Author.twitter }}" title="Twitter">
               <span class="fa-stack fa-lg">
@@ -63,7 +63,7 @@
             </a>
           </li>
           {{ end }}
-		      {{ if .Site.Author.linkedin }}
+          {{ if .Site.Author.linkedin }}
           <li>
             <a href="https://linkedin.com/in/{{ .Site.Author.linkedin }}" title="LinkedIn">
               <span class="fa-stack fa-lg">
@@ -83,7 +83,7 @@
             </a>
           </li>
           {{ end }}
-	    	  {{ if .Site.Author.stackoverflow }}
+          {{ if .Site.Author.stackoverflow }}
           <li>
             <a href="https://stackoverflow.com/{{ .Site.Author.stackoverflow }}" title="StackOverflow">
               <span class="fa-stack fa-lg">
@@ -102,7 +102,7 @@
               </span>
             </a>
           </li>
-          {{ end }} 
+          {{ end }}
           {{ if .Site.Author.instagram }}
           <li>
             <a href="https://www.instagram.com/{{ .Site.Author.instagram }}" title="Instagram">
@@ -112,7 +112,7 @@
               </span>
             </a>
           </li>
-          {{ end }} 
+          {{ end }}
           {{ if .Site.Author.youtube }}
           <li>
             <a href="https://www.youtube.com/{{ .Site.Author.youtube }}" title="Youtube">
@@ -164,31 +164,31 @@
           </li>
           {{ end }}
           {{ if .Site.Params.rss }}
-    		  <li>
-      			<a href="{{ .Site.BaseURL}}index.xml" title="RSS">
-      			  <span class="fa-stack fa-lg">
-        				<i class="fa fa-circle fa-stack-2x"></i>
-        				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-      			  </span>
-      			</a>
-    		  </li>		
+          <li>
+            <a href="{{ .Site.BaseURL}}index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
           {{ end }}
         </ul>
         <p class="credits copyright text-muted">
-    	  {{ .Site.Author.name }}
-    	  &nbsp;&bull;&nbsp;
-    	  {{ .Site.LastChange.Format "2006" }}
-    		  
-    	  {{ if .Site.Title }}
-    	  &nbsp;&bull;&nbsp;
-    	  <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    	  {{ end }}
-  	    </p>
-  	    <!-- Please don't remove this, keep my open source work credited :) -->
-    	<p class="credits theme-by text-muted">
+          {{ .Site.Author.name }}
+          &nbsp;&bull;&nbsp;
+          {{ .Site.LastChange.Format "2006" }}
+
+          {{ if .Site.Title }}
+            &nbsp;&bull;&nbsp;
+            <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+          {{ end }}
+        </p>
+        <!-- Please don't remove this, keep my open source work credited :) -->
+        <p class="credits theme-by text-muted">
           <a href="http://gohugo.io">Hugo v{{ .Hugo.Version }}</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           {{ with .Site.Params.commit }}&nbsp;&bull;&nbsp;[<a href="{{.}}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]{{ end }}
-    	</p>
+        </p>
       </div>
     </div>
   </div>
