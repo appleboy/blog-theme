@@ -163,7 +163,7 @@
             </a>
           </li>
           {{ end }}
-
+          {{ if .Site.Params.rss }}
     		  <li>
       			<a href="{{ .Site.BaseURL}}index.xml" title="RSS">
       			  <span class="fa-stack fa-lg">
@@ -172,7 +172,7 @@
       			  </span>
       			</a>
     		  </li>		
-
+          {{ end }}
         </ul>
         <p class="credits copyright text-muted">
     	  {{ .Site.Author.name }}

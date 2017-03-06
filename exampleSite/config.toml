@@ -12,6 +12,7 @@ pygmentCodeFences = true
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   commit = false
+  rss = true
 
 [Author]
   name = "Some Person"
