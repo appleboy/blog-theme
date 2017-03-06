@@ -6,31 +6,20 @@
   <body>
 
     {{ partial "nav.html" . }}
+    {{ partial "header_wp.html" . }}
 
-    <header class="header-section ">
-      <div class="intro-header no-img">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="page-heading">
-                <h2>{{ .Title }}</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="container" role="main">
+    <div class="container" role="main">	  
       <article class="post-preview">
+        <div class="list-group col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
         {{ range $key, $value := .Data.Terms.ByCount }}
-        <li>
-          <a href="/tags/{{ $value.Name | urlize }}">
-            {{ $value.Name }}({{ $value.Count }})</a>
-        </li>
+          <a href="/tags/{{ $value.Name | urlize }}" class="list-group-item">
+            {{ $value.Name }}<span class="badge">{{ $value.Count }}</span></a>
         {{ end }}
+        </div>
       </article>
     </div>
+
+    {{ partial "footer.html" . }}
 
   </body>
 </html>
