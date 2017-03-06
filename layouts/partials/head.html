@@ -52,6 +52,7 @@
   {{ end }}
 
   {{ if .Params.share_img }}
+    <meta property="og:image" content="{{ .Params.share_img | absURL }}" />
   {{ else if .Params.bigimg }}
     <meta property="og:image" content="{{ .Params.bigimg | absURL }}" />
   {{ else if .Site.Params.logo }}
@@ -80,6 +81,7 @@
   {{ end }}
 
   {{ if .Params.share_img }}
+    <meta name="twitter:image" content="{{ .Params.share_img | absURL }}" />
   {{ else if .Params.bigimg }}
     <meta name="twitter:image" content="{{ .Params.bigimg | absURL }}" />
   {{ else if .Site.Params.logo }}
