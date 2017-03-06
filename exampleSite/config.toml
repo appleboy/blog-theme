@@ -11,6 +11,7 @@ pygmentCodeFences = true
   subtitle = "Build a beautiful and simple website in minutes"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
   commit = false
   rss = true
 
