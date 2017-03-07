@@ -1,17 +1,13 @@
 {{ if or .Params.bigimg .Title }}
+
   {{ if .Params.bigimg }}
-    <div id="header-big-imgs" data-num-img=1 data-img-src-1="{{.Params.bigimg}}"></div>
+    <div id="header-big-imgs" data-num-img={{len .Params.bigimg}} {{range $i, $img := .Params.bigimg}}data-img-src-{{add $i 1}}="{{$img.src}}" {{ if $img.desc}}data-img-desc-{{add $i 1}}="{{$img.desc}}"{{end}}{{end}}></div>
   {{ end }}
 
   <header class="header-section {{ if .Params.bigimg }}has-img{{ end }}">
-    {{ if .Params.bigimg }}
-      <div class="big-img intro-header">
-        {{ partial "header.html" . }}
-        <span class='img-desc'></span>
-      </div>
-    {{ end }}
-    <div class="intro-header no-img">
+    <div class="intro-header {{ if .Params.bigimg }}big-img{{ else }}no-img{{ end }}">
       {{ partial "header.html" . }}
+      <span class="img-desc" style="display: inline;"></span>
     </div>
   </header>
 {{ else }}
