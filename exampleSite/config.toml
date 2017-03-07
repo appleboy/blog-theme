@@ -2,6 +2,7 @@ baseurl = "https://username.github.io"
 languageCode = "en-us"
 title = "Beautiful Hugo"
 theme = "beautifulhugo"
+metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 #disqusShortname = "XXX"
