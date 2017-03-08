@@ -22,42 +22,39 @@
     </header>
 
     <div class="container" role="main">
-            {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
-            {{ range $pag.Pages }}
-            <article class="post-preview">
-              <a href="{{ .Permalink }}">
-                <h2 class="post-title">{{ .Title }}</h2>
-
-                {{ if .Params.subtitle }}
-                  <h3 class="post-subtitle">
-                  {{ .Params.subtitle }}
-                  </h3>
-                {{ end }}
-              </a>
-
-              <p class="post-meta">
-                Posted on {{ .Date.Format .Site.Params.dateFormat }}
-              </p>
-              <div class="post-entry">
-              {{ if .Truncated }}
-                {{ .Summary }}
-                <a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>
-              {{ else }}
-                {{ .Content }}
-              {{ end }}
-              </div>
-
-	      {{ if .Params.tags }}
-	        <span class="post-meta">
-	          {{ range .Params.tags }}
-	            #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
-		  {{ end }}
-	        </span>
-	      {{ end }}
-
-             </article>
+      {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
+      {{ range $pag.Pages }}
+        <article class="post-preview">
+          <a href="{{ .Permalink }}">
+            <h2 class="post-title">{{ .Title }}</h2>
+            {{ if .Params.subtitle }}
+              <h3 class="post-subtitle">
+                {{ .Params.subtitle }}
+              </h3>
+            {{ end }}
+          </a>
+          <p class="post-meta">
+            Posted on {{ .Date.Format .Site.Params.dateFormat }}
+          </p>
+          <div class="post-entry">
+            {{ if .Truncated }}
+              {{ .Summary }}
+              <a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>
+            {{ else }}
+              {{ .Content }}
             {{ end }}
           </div>
+
+          {{ if .Params.tags }}
+            <span class="post-meta">
+              {{ range .Params.tags }}
+                #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+              {{ end }}
+            </span>
+          {{ end }}
+
+        </article>
+      {{ end }}
     </div>
 
     {{ partial "footer.html" . }}
