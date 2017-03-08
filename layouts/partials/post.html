@@ -18,7 +18,7 @@
         {{ end }}
       </ul>
 
-      {{ if (.Params.comments) | or (and (not (isset .Params "comments")) (.Site.Params.comments)) }}
+      {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (.Site.Params.comments)) }}
         {{ if .Site.DisqusShortname }}
           <div class="disqus-comments">
             {{ template "_internal/disqus.html" . }}

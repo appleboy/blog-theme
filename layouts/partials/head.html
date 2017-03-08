@@ -44,21 +44,6 @@
   <meta property="og:type" content="website" />
 
   {{ if .Params.id }}
-<<<<<<< HEAD
-  <meta property="og:url" content="{{ .URL | absURL }}" />
-  <link rel="canonical" href="{{ .URL | absURL }}" />
-  {{ else }}
-  <meta property="og:url" content="{{ .URL | absURL }}" />
-  <link rel="canonical" href="{{ .URL | absURL }}" />
-  {{ end }}
-
-  {{ if .Params.share_img }}
-  <meta property="og:image" content="{{ .Params.share_img | absURL }}" />
-  {{ else if .Params.bigimg }}
-  <meta property="og:image" content="{{ .Params.bigimg | absURL }}" />
-  {{ else if .Site.Params.logo }}
-  <meta property="og:image" content="{{ .Site.Params.logo | absURL }}" />
-=======
     <meta property="og:url" content="{{ .URL | absURL }}" />
     <link rel="canonical" href="{{ .URL | absURL }}" />
   {{ else }}
@@ -72,7 +57,6 @@
     <meta property="og:image" content="{{ .Params.bigimg | absURL }}" />
   {{ else if .Site.Params.logo }}
     <meta property="og:image" content="{{ .Site.Params.logo | absURL }}" />
->>>>>>> refs/remotes/halogenica/master
   {{ end }}
   
   <!-- Twitter summary cards -->
@@ -81,30 +65,6 @@
   <meta name="twitter:creator" content="@{{ .Site.Author.twitter }}" />
 
   {{ if .Params.meta_title }}
-<<<<<<< HEAD
-  <meta name="twitter:title" content="{{ .Params.meta_title }}" />
-  {{ else if .Title }}
-  <meta name="twitter:title" content="{{ .Title }}" />
-  {{ else }}
-  <meta name="twitter:title" content="{{ .Site.Title }}" />
-  {{ end }}
-
-  {{ if .Params.meta_description }}
-  <meta name="twitter:description" content="{{ .Params.meta_description }}">
-  {{ else if .Params.subtitle }}
-  <meta name="twitter:description" content="{{ .Params.subtitle }}">
-  {{ else }}
-  <meta name="twitter:description" content="{{ .Content | plainify | htmlEscape | truncate 200 }}">
-  {{ end }}
-
-  {{ if .Params.share_img }}
-  <meta name="twitter:image" content="{{ .Params.share_img }}" />
-  {{ else if .Params.bigimg }}
-  <meta name="twitter:image" content="{{ .Params.bigimg | absURL }}" />
-  {{ else if .Site.Params.logo }}
-  <meta name="twitter:image" content="{{ .Site.Params.logo | absURL }}" />
-  {{ end }}  
-=======
     <meta name="twitter:title" content="{{ .Params.meta_title }}" />
   {{ else if .Title }}
     <meta name="twitter:title" content="{{ .Title }}" />
@@ -127,6 +87,5 @@
   {{ else if .Site.Params.logo }}
     <meta name="twitter:image" content="{{ .Site.Params.logo | absURL }}" />
   {{ end }} 
->>>>>>> refs/remotes/halogenica/master
 
 </head>
