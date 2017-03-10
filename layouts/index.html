@@ -13,22 +13,22 @@
 
     <header class="header-section {{ if isset .Site.Params.bigimg 0 }}has-img{{ end }}">
       {{ if isset .Site.Params.bigimg 0 }}
-      <div class="intro-header big-img">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="page-heading">
-                <h1>{{.Site.Title}}</h1>
-                {{if .Site.Params.subtitle}}
-                  <hr class="small">
-                  <span class="page-subheading">{{.Site.Params.subtitle}}</span>
-                {{end}}
+        <div class="intro-header big-img">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="page-heading">
+                  <h1>{{.Site.Title}}</h1>
+                  {{if .Site.Params.subtitle}}
+                    <hr class="small">
+                    <span class="page-subheading">{{.Site.Params.subtitle}}</span>
+                  {{end}}
+                </div>
               </div>
             </div>
           </div>
+          <span class="img-desc" style="display: inline;"></span>
         </div>
-        <span class="img-desc" style="display: inline;"></span>
-      </div>
       {{end}}
       <div class="intro-header no-img">
         <div class="container">
