@@ -1,17 +1,18 @@
+{{ $subtitle := $.Scratch.Get "subtitle" }}
+
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="{{ .Type }}-heading">
-          <h1>{{ if .Title }}{{ .Title }}{{ else }}<br/>{{ end }}</h1>
-            {{ if .Params.subtitle }}
+          <h1>{{ with $.Scratch.Get "title" }}{{.}}{{ else }}<br/>{{ end }}</h1>
+            {{ if $subtitle }}
               {{ if eq .Type "page" }}
                 <hr class="small">
-                <span class="{{ .Type }}-subheading">{{ .Params.subtitle }}</span>
+                <span class="{{ .Type }}-subheading">{{ $subtitle }}</span>
               {{ else }}
-                <h2 class="{{ .Type }}-subheading">{{ .Params.subtitle }}</h2>
+                <h2 class="{{ .Type }}-subheading">{{ $subtitle }}</h2>
               {{ end }}
             {{ end }}
-
             {{ if eq .Type "post" }}
               <span class="post-meta">Posted on {{ .Date.Format .Site.Params.dateFormat }}</span>
             {{ end }}
