@@ -51,6 +51,11 @@
     <div role="main" class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          {{ with .Content }}
+            <div class="well">
+              {{.}}
+            </div>
+          {{ end }}
           <div class="posts-list">
             {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
             {{ range $pag.Pages }}
