@@ -1,14 +1,25 @@
-{{ if or .Params.bigimg .Title }}
-  {{ if isset .Params.bigimg 0 }}
-    <div id="header-big-imgs" data-num-img={{len .Params.bigimg}} {{range $i, $img := .Params.bigimg}}data-img-src-{{add $i 1}}="{{$img.src}}" {{ if $img.desc}}data-img-desc-{{add $i 1}}="{{$img.desc}}"{{end}}{{end}}></div>
+{{ if .IsHome }}
+  {{ $.Scratch.Add "bigimg" .Site.Params.bigimg }}
+  {{ $.Scratch.Add "title" .Site.Title }}
+  {{ $.Scratch.Add "subtitle" .Site.Params.subtitle }}
+{{ else }}
+  {{ $.Scratch.Add "bigimg" .Params.bigimg }}
+  {{ $.Scratch.Add "title" .Title }}
+  {{ $.Scratch.Add "subtitle" .Params.subtitle }}
+{{ end }}
+{{ $bigimg := $.Scratch.Get "bigimg" }}
+
+{{ if or $bigimg ($.Scratch.Get "title") }}
+  {{ if isset $bigimg 0 }}
+    <div id="header-big-imgs" data-num-img={{len $bigimg}} {{range $i, $img := $bigimg}}data-img-src-{{add $i 1}}="{{$img.src}}" {{ if $img.desc}}data-img-desc-{{add $i 1}}="{{$img.desc}}"{{end}}{{end}}></div>
   {{ end }}
 
-  <header class="header-section {{ if isset .Params.bigimg 0 }}has-img{{ end }}">
-    {{ if isset .Params.bigimg 0 }}
-      <div class="intro-header big-img">
-        {{ partial "header.html" . }}
-        <span class="img-desc" style="display: inline;"></span>
-      </div>
+  <header class="header-section {{ if isset $bigimg 0 }}has-img{{ end }}">
+    {{ if isset $bigimg 0 }}
+    <div class="intro-header big-img">
+      {{ partial "header.html" . }}
+      <span class="img-desc" style="display: inline;"></span>
+    </div>
     {{end}}
     <div class="intro-header no-img">
       {{ partial "header.html" . }}
