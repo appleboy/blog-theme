@@ -1,11 +1,11 @@
 {{ if .IsHome }}
-  {{ $.Scratch.Add "bigimg" .Site.Params.bigimg }}
   {{ $.Scratch.Add "title" .Site.Title }}
-  {{ $.Scratch.Add "subtitle" .Site.Params.subtitle }}
+  {{ if .Site.Params.subtitle }}{{ $.Scratch.Add "subtitle" .Site.Params.subtitle }}{{ end }}
+  {{ if .Site.Params.bigimg }}{{ $.Scratch.Add "bigimg" .Site.Params.bigimg }}{{ end }}
 {{ else }}
-  {{ $.Scratch.Add "bigimg" .Params.bigimg }}
   {{ $.Scratch.Add "title" .Title }}
-  {{ $.Scratch.Add "subtitle" .Params.subtitle }}
+  {{ if .Params.subtitle }}{{ $.Scratch.Add "subtitle" .Params.subtitle }}{{ end }}
+  {{ if .Params.bigimg }}{{ $.Scratch.Add "bigimg" .Params.bigimg }}{{ end }}
 {{ end }}
 {{ $bigimg := $.Scratch.Get "bigimg" }}
 
