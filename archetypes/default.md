@@ -1,6 +1,4 @@
 ---
 subtitle: ""
-comments: 
 tags: []
-bigimg: [{}]
 ---
