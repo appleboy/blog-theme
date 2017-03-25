@@ -205,5 +205,17 @@
 <script src="{{ .Site.BaseURL }}/js/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
+<!-- Google Custom Search Engine -->
+<script>
+  (function() {
+    var cx = '{{ .Site.Params.gcse }}';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
 {{ template "_internal/google_analytics.html" . }}
