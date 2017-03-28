@@ -206,6 +206,7 @@
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
 <!-- Google Custom Search Engine -->
+{{ if .Site.Params.gcse }}
 <script>
   (function() {
     var cx = '{{ .Site.Params.gcse }}';
@@ -217,5 +218,6 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
+{{ end }}
 
 {{ template "_internal/google_analytics.html" . }}
