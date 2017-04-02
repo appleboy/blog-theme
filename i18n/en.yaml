@@ -25,6 +25,8 @@
 # Navigation
 - id: toggleNavigation
   translation: "Toggle navigation"
+- id: languageSwitcherLabel
+  translation: "Language"
 - id: gcseLabelShort
   translation: "Search"
 - id: gcseLabelLong
