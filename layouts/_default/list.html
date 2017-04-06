@@ -53,7 +53,7 @@
                 {{ if .Params.tags }}
                   <span class="post-meta">
                     {{ range .Params.tags }}
-                      #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+                      #<a href="{{ $.Site.LanguagePrefix }}/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
                     {{ end }}
                   </span>
                 {{ end }}
