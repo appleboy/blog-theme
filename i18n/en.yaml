@@ -3,6 +3,10 @@
   translation: "January 2, 2006"
 - id: postedOnDate
   translation: "Posted on {{ .Count }}"
+- id: translationsLabel
+  translation: "Other languages: "
+- id: translationsSeparator
+  translation: ", "
 - id: readMore
   translation: "Read More"
 - id: olderPosts

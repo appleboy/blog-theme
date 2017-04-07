@@ -337,6 +337,11 @@ footer .theme-by {
   font-style: italic;
   margin: 0 0 10px;
 }
+.post-preview .post-meta a,
+.post-heading .post-meta a {
+  color: #404040;
+  text-decoration: none;
+}
 .post-preview .post-entry {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

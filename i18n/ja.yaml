@@ -3,6 +3,10 @@
   translation: "2006年1月2日"
 - id: postedOnDate
   translation: "{{ .Count }}に投稿"
+- id: translationsLabel
+  translation: "翻訳："
+- id: translationsSeparator
+  translation: "・"
 - id: readMore
   translation: "続きを読む"
 - id: olderPosts

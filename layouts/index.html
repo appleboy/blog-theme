@@ -30,9 +30,7 @@
                 {{ end }}
               </a>
 
-              <p class="post-meta">
-                {{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format | i18n "postedOnDate" }}
-              </p>
+              {{ partial "post_meta.html" . }}
               <div class="post-entry">
                 {{ if .Truncated }}
                   {{ .Summary }}

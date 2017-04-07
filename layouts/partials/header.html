@@ -32,7 +32,7 @@
                     {{ end }}
                   {{ end }}
                   {{ if eq .Type "post" }}
-                    <span class="post-meta">{{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format | i18n "postedOnDate" }}</span>
+                    {{ partial "post_meta.html" . }}
                   {{ end }}
               </div>
             </div>
@@ -57,7 +57,7 @@
                   {{ end }}
                 {{ end }}
                 {{ if eq .Type "post" }}
-                  <span class="post-meta">{{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format | i18n "postedOnDate" }}</span>
+                  {{ partial "post_meta.html" . }}
                 {{ end }}
             </div>
           </div>
