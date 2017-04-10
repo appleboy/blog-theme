@@ -1,5 +1,5 @@
 baseurl = "https://username.github.io"
-languageCode = "en-us"
+DefaultContentLanguage = "en"
 title = "Beautiful Hugo"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
