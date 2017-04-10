@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Lang }}">
 
   {{ partial "head.html" . }}
 
@@ -30,13 +30,11 @@
                 {{ end }}
               </a>
 
-              <p class="post-meta">
-                Posted on {{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat) }}
-              </p>
+              {{ partial "post_meta.html" . }}
               <div class="post-entry">
                 {{ if .Truncated }}
                   {{ .Summary }}
-                  <a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>
+                  <a href="{{ .Permalink }}" class="post-read-more">[{{ i18n "readMore" }}]</a>
                 {{ else }}
                   {{ .Content }}
                 {{ end }}
@@ -45,7 +43,7 @@
               {{ if .Params.tags }}
                 <span class="post-meta">
                 {{ range .Params.tags }}
-                  #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+                  #<a href="{{ $.Site.LanguagePrefix }}/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
                 {{ end }}
                 </span>
               {{ end }}
@@ -58,12 +56,12 @@
             <ul class="pager main-pager">
               {{ if .Paginator.HasPrev }}
                 <li class="previous">
-                  <a href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}">&larr; Newer Posts</a>
+                  <a href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}">&larr; {{ i18n "newerPosts" }}</a>
                 </li>
               {{ end }}
               {{ if .Paginator.HasNext }}
                 <li class="next">
-                  <a href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}">Older Posts &rarr;</a>
+                  <a href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}">{{ i18n "olderPosts" }} &rarr;</a>
                 </li>
               {{ end }}
             </ul>
