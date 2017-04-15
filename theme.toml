@@ -4,7 +4,7 @@ licenselink = "https://github.com/halogenica/Hugo-BeautifulHugo/blob/master/LICE
 description = "A port of Beautiful Jekyll theme"
 tags = ["blog", "company", "portfolio", "projects", "minimal", "responsive"]
 features = ["blog", "themes", "disqus", "minimal", "responsive"]
-min_version = 0.15
+min_version = 0.17
 
 [author]
     name = "halogenica"
@@ -15,3 +15,4 @@ min_version = 0.15
     author =  "dattali"
     homepage = "http://deanattali.com/beautiful-jekyll/"
     repo = "https://github.com/daattali/beautiful-jekyll"
+
