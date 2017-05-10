@@ -1,6 +1,6 @@
 # Content
 - id: dateFormat
-  translation: "一月 2, 2006"
+  translation: "January 2, 2006"
 - id: postedOnDate
   translation: "发表于 {{ .Count }}"
 - id: translationsLabel
