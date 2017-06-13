@@ -1,7 +1,4 @@
 /* --- General --- */
-html, body {
-  height: 100%;
-}
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
@@ -11,9 +8,11 @@ body {
   background: #FFF;
   display: flex;
   flex-flow: column;
+  height: 100vh;
 }
 .container[role=main] {
   margin-bottom:50px;
+  flex: 1 0 auto;
 }
 p {
   line-height: 1.5;
