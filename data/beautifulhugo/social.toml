@@ -12,7 +12,7 @@ icon = "fa-facebook"
 
 [[social_icons]]
 id = "googleplus"
-url = "https://www.plus.google.com/%s"
+url = "https://plus.google.com/%s"
 title = "Google+"
 icon = "fa-google-plus"
 
