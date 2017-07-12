@@ -48,6 +48,8 @@ pygmentCodeFences = true
   spotify = "username"
   bandcamp = "username"
   itchio = "username"
+  vk = "username"
+  paypal = "username"
 
 [[menu.main]]
     name = "Blog"
