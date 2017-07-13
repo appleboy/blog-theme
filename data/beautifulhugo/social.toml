@@ -107,6 +107,18 @@ title = "Keybase"
 icon = "fa-key"
 
 [[social_icons]]
+id = "vk"
+url = "https://vk.com/%s"
+title = "VK"
+icon = "fa-vk"
+
+[[social_icons]]
+id = "paypal"
+url = "https://paypal.me/%s"
+title = "PayPal"
+icon = "fa-paypal"
+
+[[social_icons]]
 id = "telegram"
 url = "https://telegram.me/%s"
 title = "Telegram"
