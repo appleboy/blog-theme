@@ -50,6 +50,7 @@ pygmentCodeFences = true
   itchio = "username"
   vk = "username"
   paypal = "username"
+  telegram = "username"
 
 [[menu.main]]
     name = "Blog"
