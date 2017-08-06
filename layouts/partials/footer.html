@@ -27,10 +27,12 @@
           {{ end }}
         </ul>
         <p class="credits copyright text-muted">
-          {{ if .Site.Author.web }}
-            <a href="{{ .Site.Author.website }}">{{ .Site.Author.name }}</a>
-          {{ else }}
-            {{ .Site.Author.name }}
+          {{ if .Site.Author.name }}
+            {{ if .Site.Author.web }}
+              <a href="{{ .Site.Author.website }}">{{ .Site.Author.name }}</a>
+            {{ else }}
+              {{ .Site.Author.name }}
+            {{ end }}          
           {{ end }}
           
           &nbsp;&bull;&nbsp;
