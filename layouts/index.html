@@ -19,6 +19,9 @@
                   {{ .Params.subtitle }}
                   </h3>
                 {{ end }}
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" class="img-title" />
+                {{ end }}
               </a>
 
               {{ partial "post_meta.html" . }}
@@ -60,4 +63,3 @@
     </div>
   </div>
 {{ end }}
-
