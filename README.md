@@ -25,14 +25,16 @@ This theme has support for either Hugo's lightning fast Chroma, or both server s
 To enable Chroma, add the following to your site parameters:
 
 ```
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 [params]
     useChroma = true
 ```
 
-Then, you can use a style by running:
+Then, you can use a different style by running:
 
 ```
-hugo gen chromastyles --style=monokai > static/css/syntax.css
+hugo gen chromastyles --style=manni > static/css/syntax.css
 ```
 
 See [the Hugo docs for more](https://gohugo.io/content-management/syntax-highlighting/).
@@ -55,7 +57,7 @@ to your `config.toml`.
 
 Use triple backticks ( ``` ) or triple tilde ( ~~~ ) around code blocks.
 
-Client side highlighting does not require pygments to be installed.
+Client side highlighting does not require pygments to be installed. This currently is only active if you have not selected Chroma, because they don't play well together.
 
 ### Disqus support
 
