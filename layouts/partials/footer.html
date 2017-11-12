@@ -17,7 +17,7 @@
           {{ end }}
           {{ if .Site.Params.rss }}
           <li>
-            <a href="{{ "index.xml" | absLangURL }}" title="RSS">
+            <a href="{{ .RSSLink }}" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -32,9 +32,9 @@
               <a href="{{ .Site.Author.website }}">{{ .Site.Author.name }}</a>
             {{ else }}
               {{ .Site.Author.name }}
-            {{ end }}          
+            {{ end }}
           {{ end }}
-          
+
           &nbsp;&bull;&nbsp;
           {{ .Site.LastChange.Format "2006" }}
 
