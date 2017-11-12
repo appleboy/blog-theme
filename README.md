@@ -18,20 +18,46 @@ This theme is designed to look great on both large-screen and small-screen (mobi
 
 ### Syntax highlighting
 
-This theme has support for both server side and client side highlighting.
+This theme has support for either Hugo's lightning fast Chroma, or both server side and client side highlighting.
+
+#### Chroma
+
+To enable Chroma, add the following to your site parameters:
+
+```
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+[params]
+    useChroma = true
+```
+
+Then, you can use a different style by running:
+
+```
+hugo gen chromastyles --style=manni > static/css/syntax.css
+```
+
+See [the Hugo docs for more](https://gohugo.io/content-management/syntax-highlighting/).
 
 #### Server side syntax highlighting
 
 Use the `highlight` shortcode (with Pygments),
 see [the Hugo documentation](http://gohugo.io/extras/highlighting/) for more information.
 
-To use this feature install Pygments (`pip install Pygments`) and add `pygmentsuseclasses = true` to your `config.toml`.
+To use this feature install Pygments (`pip install Pygments`) and add
+
+```
+pygmentsUseClasses = true
+pygmentsUseClassic = true
+```
+
+to your `config.toml`.
 
 #### Client side syntax highlighting
 
 Use triple backticks ( ``` ) or triple tilde ( ~~~ ) around code blocks.
 
-Client side highlighting does not require pygments to be installed.
+Client side highlighting does not require pygments to be installed. This currently is only active if you have not selected Chroma, because they don't play well together.
 
 ### Disqus support
 

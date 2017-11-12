@@ -44,8 +44,14 @@
   <link rel="stylesheet" href="{{ "css/main.css" | absURL }}" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  {{- if (not ( .Site.Params.UseChroma )) }}
+  <link rel="stylesheet" href="{{ "css/highlighting.css" | absURL }}" />
   <link rel="stylesheet" href="{{ "css/pygment_highlights.css" | absURL }}" />
   <link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" />
+  {{- else -}}
+  <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}" />
+  {{- end -}}
+
 {{- partial "head_custom.html" . }}
 {{- partial "load-photoswipe-theme.html" . }}
 {{ template "_internal/google_analytics_async.html" . }}
