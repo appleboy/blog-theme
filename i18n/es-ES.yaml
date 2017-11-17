@@ -1,6 +1,8 @@
 # Content
 - id: dateFormat
   translation: "2 de enero, 2006"
+- id: shortdateFormat
+  translation: "2 Jan, 2006 15:04:05"
 - id: postedOnDate
   translation: "Publicado el {{ .Count }}"
 - id: translationsLabel

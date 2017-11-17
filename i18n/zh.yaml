@@ -1,6 +1,8 @@
 # Content
 - id: dateFormat
   translation: "January 2, 2006"
+- id: shortdateFormat
+  translation: "2 Jan, 2006 15:04:05"
 - id: postedOnDate
   translation: "发表于 {{ .Count }}"
 - id: translationsLabel
@@ -37,4 +39,3 @@
   translation: "搜索 {{ .Site.Title }}"
 - id: gcseClose
   translation: "关闭"
-

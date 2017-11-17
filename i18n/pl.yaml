@@ -1,6 +1,8 @@
 # Content
 - id: dateFormat
   translation: "02.01.2006"
+- id: shortdateFormat
+  translation: "2 Jan, 2006 15:04:05"
 - id: postedOnDate
   translation: "Opublikowany {{ .Count }}"
 - id: translationsLabel
@@ -37,4 +39,3 @@
   translation: "Szukaj {{ .Site.Title }}"
 - id: gcseClose
   translation: "Zamknij"
-

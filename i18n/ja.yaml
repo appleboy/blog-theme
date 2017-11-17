@@ -1,6 +1,8 @@
 # Content
 - id: dateFormat
   translation: "2006年1月2日"
+- id: shortdateFormat
+  translation: "2 Jan, 2006 15:04:05"
 - id: postedOnDate
   translation: "{{ .Count }}に投稿"
 - id: translationsLabel
@@ -35,4 +37,3 @@
   translation: "{{ .Site.Title }}を検索"
 - id: gcseClose
   translation: "閉じる"
-

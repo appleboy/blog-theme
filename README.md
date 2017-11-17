@@ -63,6 +63,21 @@ Client side highlighting does not require pygments to be installed. This current
 
 To use this feature, uncomment and fill out the `disqusShortname` parameter in `config.toml`.
 
+### Staticman support
+
+Add *staticman* configuration section in `config.toml` or `config.yaml`
+
+Sample configuration
+
+```
+  staticman:
+    api: https://api.staticman.net/v2/entry/badele/blog.jesuislibre.org/master/comments
+    pulls: https://github.com/badele/blog.jesuislibre.org/pulls
+    recaptcha:
+      sitekey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
+      secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
+```
+
 ### Google Analytics
 
 To add Google Analytics, simply sign up to [Google Analytics](http://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `googleAnalytics` parameter in `config.toml`.
