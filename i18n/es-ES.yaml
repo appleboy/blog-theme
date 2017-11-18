@@ -19,6 +19,11 @@
   translation: "Artículo anterior"
 - id: nextPost
   translation: "Artículo siguiente"
+- id: readTime
+  translation: "min"
+- id: words
+  translation: "mots"
+
 
 # 404 page
 - id: pageNotFound

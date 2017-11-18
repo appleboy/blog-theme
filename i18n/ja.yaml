@@ -19,6 +19,11 @@
   translation: "前ページ"
 - id: nextPost
   translation: "次ページ"
+- id: readTime
+  translation: "min"
+- id: words
+  translation: "mots"
+
 
 # 404 page
 - id: pageNotFound
