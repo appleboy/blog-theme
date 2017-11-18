@@ -85,7 +85,7 @@ comments:
   allowedFields: ["name", "email", "website", "comment"]
   branch            : "master"
   commitMessage     : "New comment in {options.slug}"
-  path: "data/comments/{options.slug}/{options.parent}"
+  path: "data/comments/{options.slug}"
   filename          : "comment-{@timestamp}"
   format            : "yaml"
   moderation        : true

@@ -1,14 +1,21 @@
 <section class="js-comments staticman-comments">
-  <h3>Comments</h3>
 
   {{ $slug := replace .URL "/" "" }}
-  {{ $.Scratch.Add "hasComments" 0 }}
 
-<!-- Parse all parent comment -->
- {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
- <!-- Check if comment has 0 parent -->
-  {{ if eq $index "0" }}
-    {{ range $comments}}
+  {{ $comments := index $.Site.Data.comments $slug }}
+  {{ if $comments }}
+    {{ if gt (len $comments) 1  }}
+      <h3>{{ len $comments  }} {{ i18n "moreComment" }}</h3>
+    {{ else }}
+      <h3>{{ len $comments  }} {{ i18n "oneComment" }}</h3>
+    {{ end }}
+  {{ else }}
+    <h3>{{ i18n "noComment" }}</h3>
+  {{ end }}
+
+  {{ $.Scratch.Set "hasComments" 0 }}
+  {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
+    {{ if not .parent }}
       {{ $.Scratch.Add "hasComments" 1 }}
       <article id="comment-{{ $.Scratch.Get "hasComments" }}" class="static-comment">
         <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=48">
@@ -20,15 +27,14 @@
         <div class="comment-timestamp"><a href="#comment-{{ $.Scratch.Get "hasComments" }}" title="Permalink to this comment"><time datetime="{{ .date }}">{{ dateFormat (default (i18n "shortdateFormat") .Site.Params.dateformat) .date}}</time></a></div>
         <div class="comment-content"><p>{{ .comment | markdownify }}</p></div>
       </article>
-      {{ end }}
+    {{ end }}
   {{ end }}
- {{ end }}
 
 
 
 <form class="js-form form" method="post" action="{{ .Site.Params.staticman.api}}">
   <input type="hidden" name="options[slug]" value="{{ replace .URL "/" "" }}">
-  <input type="hidden" name="options[parent]" value="0">
+  <input type="hidden" name="options[parent]" value="">
 
   {{ if .Site.Params.staticman.recaptcha }}
   <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ .Site.Params.staticman.recaptcha.sitekey }}">
@@ -37,25 +43,25 @@
 
   <fieldset>
   <div class="textfield">
-    <textarea name="fields[comment]" type="text" placeholder="You can use Markdown syntax"></textarea>
+    <textarea name="fields[comment]" type="text" placeholder="{{ i18n "useMarkdown" }}"></textarea>
   </div>
   </fieldset>
 
   <fieldset>
     <div class="textfield">
-      <input name="fields[name]" type="text" placeholder="Your name"/>
+      <input name="fields[name]" type="text" placeholder="{{ i18n "yourName" }}"/>
     </div>
   </fieldset>
 
   <fieldset>
     <div class="textfield">
-      <input type="email" name="fields[email]"  placeholder="Your email (optional, used only to send comments.)"/>
+      <input type="email" name="fields[email]"  placeholder="{{ i18n "yourEmail" }}"/>
     </div>
   </fieldset>
 
   <fieldset>
     <div class="textfield">
-      <input type="text" name="fields[website]"  placeholder="Your website"/>
+      <input type="text" name="fields[website]"  placeholder="{{ i18n "yourWebsite" }}"/>
     </div>
   </fieldset>
 
