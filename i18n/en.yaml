@@ -1,6 +1,8 @@
 # Content
 - id: dateFormat
   translation: "January 2, 2006"
+- id: shortdateFormat
+  translation: "Jan 2, 2006 15:04:05"
 - id: postedOnDate
   translation: "Posted on {{ .Count }}"
 - id: translationsLabel
@@ -37,4 +39,21 @@
   translation: "Search {{ .Site.Title }}"
 - id: gcseClose
   translation: "Close"
+
+# Staticman
+- id: noComment
+  translation: "No comment"
+- id: oneComment
+  translation: "comment"
+- id: moreComment
+  translation: "comments"
+- id: useMarkdown
+  translation: "You can use Markdown syntax"
+- id: yourName
+  translation: "Your name"
+- id: yourEmail
+  translation: "Your email address"
+- id: yourWebsite
+  translation: "You website"
+
 
