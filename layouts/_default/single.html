@@ -6,7 +6,7 @@
         {{ .Content }}
       </article>
 
-      {{ if ne .Params.type "page" }}
+      {{ if ne .Params.Type "page" }}
         <ul class="pager blog-pager">
           {{ if .PrevInSection }}
             <li class="previous">
@@ -22,7 +22,7 @@
       {{ end }}
 
 
-      {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and .Site.Params.comments (ne .Params.type "page"))) }}
+      {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and .Site.Params.comments (ne .Params.Type "page"))) }}
         {{ if .Site.DisqusShortname }}
           <div class="disqus-comments">
             {{ template "_internal/disqus.html" . }}
