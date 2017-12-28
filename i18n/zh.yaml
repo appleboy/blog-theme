@@ -20,9 +20,9 @@
 - id: nextPost
   translation: "后一篇"
 - id: readTime
-  translation: "min"
+  translation: "分钟"
 - id: words
-  translation: "mots"
+  translation: "个字"
 
 
 # 404 page

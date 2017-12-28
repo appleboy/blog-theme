@@ -20,9 +20,9 @@
 - id: nextPost
   translation: "次ページ"
 - id: readTime
-  translation: "min"
+  translation: "分間"
 - id: words
-  translation: "mots"
+  translation: "言葉"
 
 
 # 404 page
