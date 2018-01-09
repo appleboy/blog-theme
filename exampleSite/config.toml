@@ -4,8 +4,11 @@ DefaultContentLanguage = "en"
 title = "Beautiful Hugo"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
+pygmentsStyle = "trac"
 pygmentsUseClasses = true
-pygmentCodeFences = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentOptions = "linenos=table"
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 
