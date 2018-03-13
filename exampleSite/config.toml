@@ -45,6 +45,7 @@ pygmentsCodefencesGuessSyntax = true
   googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
   github = "username"
   gitlab = "username"
+  bitbucket = "username"
   twitter = "username"
   reddit = "username"
   linkedin = "username"
