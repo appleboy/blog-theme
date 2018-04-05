@@ -47,9 +47,10 @@ pygmentsUseClassic = true
 Pygments is mostly compatable with the newer Chroma. It is slower but has some additional theme options. I recommend Chroma over Pygments.
 
 #### Highlight.js - Client side syntax highlighting
-
+```
 [Params]
     useHLJS = true
+```
 
 Client side highlighting does not require pygments to be installed. This will use `highlight.min.css` instead of `syntax.css` for highlighting (effectively disabling Chroma). Highlight.js has a wider range of support for languages and themes, and an alternative highlighting engine.
 
