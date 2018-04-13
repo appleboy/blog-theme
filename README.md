@@ -8,7 +8,7 @@
     $ cd themes
     $ git clone https://github.com/halogenica/beautifulhugo.git beautifulhugo
 
-See [the Hugo documentation](http://gohugo.io/themes/installing/) for more information.
+See [the Hugo documentation](https://gohugo.io/themes/installing/) for more information.
 
 ## Extra Features
 
@@ -102,7 +102,7 @@ comments:
 
 ### Google Analytics
 
-To add Google Analytics, simply sign up to [Google Analytics](http://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `googleAnalytics` parameter in `config.toml`.
+To add Google Analytics, simply sign up to [Google Analytics](https://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `googleAnalytics` parameter in `config.toml`.
 
 ### Commit SHA on the footer
 
@@ -123,7 +123,7 @@ See at [xor-gate/xor-gate.org](https://github.com/xor-gate/xor-gate.org) an exam
   
 ## About
 
-This is a port of the Jekyll theme [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll/) by [Dean Attali](http://deanattali.com/aboutme#contact). It supports most of the features of the original theme.
+This is a port of the Jekyll theme [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/) by [Dean Attali](https://deanattali.com/aboutme#contact). It supports most of the features of the original theme.
 
 ## License
 
