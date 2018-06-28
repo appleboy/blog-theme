@@ -8,7 +8,14 @@
   <meta property="og:title" content="{{ . }}" />
   <meta name="twitter:title" content="{{ . | truncate 70 }}" />
 {{- end }}
-{{- with .Description | default .Params.subtitle | default .Summary }}
+{{- if eq .Kind "taxonomyTerm" }}
+  {{- $text := printf "Overview of all pages by %s" .Data.Singular }}
+  {{- $.Scratch.Set "Description" $text }}
+{{- else if eq .Kind "taxonomy" }}
+  {{- $text := printf "Overview of all pages with the %s #%s" .Data.Singular $.Title }}
+  {{- $.Scratch.Set "Description" $text }}
+{{- end }}
+{{- with .Description | default .Params.subtitle | default .Summary | default ($.Scratch.Get "Description") }}
   <meta name="description" content="{{ . }}">
   <meta property="og:description" content="{{ . }}">
   <meta name="twitter:description" content="{{ . | truncate 200 }}">
