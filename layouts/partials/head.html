@@ -13,18 +13,21 @@
 
   {{- $title := printf "Overview of all pages with the %s #%s" .Data.Singular $.Title }}
   {{- $.Scratch.Set "Title" $title }}
+{{- else }}
+  {{- $.Scratch.Set "Description" ( .Description | default .Params.subtitle | default .Summary ) }}
+  {{- $.Scratch.Set "Title" ( .Title | default .Site.Title ) }}
 {{- end }}
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <!-- Site Title, Description, Author, and Favicon -->
-{{- with ($.Scratch.Get "Title") | default .Title | default .Site.Title }}
-  <title>{{ . }}</title>
+{{- with ($.Scratch.Get "Title") }}
+  <title>{{ . }} - {{ $.Site.Title }}</title>
   <meta property="og:title" content="{{ . }}" />
   <meta name="twitter:title" content="{{ . | truncate 70 }}" />
 {{- end }}
-{{- with .Description | default .Params.subtitle | default .Summary | default ($.Scratch.Get "Description") }}
+{{- with ($.Scratch.Get "Description") }}
   <meta name="description" content="{{ . }}">
   <meta property="og:description" content="{{ . }}">
   <meta name="twitter:description" content="{{ . | truncate 200 }}">
