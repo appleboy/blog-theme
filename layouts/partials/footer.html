@@ -112,11 +112,4 @@
 <!-- End Piwik Code -->
 {{ end }}
 
-<!-- For Mermaid Diagrams -->
-<link href="{{"css/mermaid.css" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}" type="text/css" rel="stylesheet" />
-<script src="{{"js/mermaid.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
-<script>
-    mermaid.initialize({ startOnLoad: true });
-</script>
-
 {{- partial "footer_custom.html" . }}
