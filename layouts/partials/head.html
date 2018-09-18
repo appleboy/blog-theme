@@ -62,7 +62,9 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   {{- end -}}
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
 {{- partial "head_custom.html" . }}
-{{- partial "load-photoswipe-theme.html" . }}
 {{ template "_internal/google_analytics_async.html" . }}
 </head>
