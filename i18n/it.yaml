@@ -63,4 +63,8 @@
 - id: yourWebsite
   translation: "Il tuo website"
 
-
+# Delayed Disqus
+- id: show
+  translation: "Mostra"
+- id: comments
+  translation: "commenti" 

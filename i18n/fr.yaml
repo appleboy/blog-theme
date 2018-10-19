@@ -62,3 +62,9 @@
   translation: "Votre addresse mail"
 - id: yourWebsite
   translation: "Votre site web"
+
+# Delayed Disqus
+- id: show
+  translation: "Afficher"
+- id: comments
+  translation: "commentaires" 
