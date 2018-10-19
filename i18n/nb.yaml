@@ -63,4 +63,6 @@
 - id: yourWebsite
   translation: "Din webside"
 
-
+# Related posts
+- id: seeAlso
+translation: "Se også"

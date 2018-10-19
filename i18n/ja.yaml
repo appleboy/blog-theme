@@ -61,6 +61,6 @@
 - id: yourWebsite
   translation: "You website"
 
-
-
-
+# Related posts
+- id: seeAlso
+translation: "も参照してください"

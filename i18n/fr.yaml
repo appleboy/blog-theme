@@ -62,3 +62,7 @@
   translation: "Votre addresse mail"
 - id: yourWebsite
   translation: "Votre site web"
+
+# Related posts
+- id: seeAlso
+translation: "Voir également"
