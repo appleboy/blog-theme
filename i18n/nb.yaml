@@ -68,3 +68,7 @@
   translation: "Vis"
 - id: comments
   translation: "kommentarer" 
+
+# Related posts
+- id: seeAlso
+  translation: "Se også"

@@ -765,4 +765,9 @@ div.splitbox div.right {
   color: #FFF;
   background: #0085a1;
   border: 1px solid #0085a1;
+
+/* Related posts */
+h4.see-also {
+  margin-top: 20px
+
 }

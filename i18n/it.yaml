@@ -68,3 +68,7 @@
   translation: "Mostra"
 - id: comments
   translation: "commenti" 
+
+# Related posts
+- id: seeAlso
+  translation: "Guarda anche"

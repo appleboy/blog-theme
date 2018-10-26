@@ -68,3 +68,7 @@
   translation: "Показать"
 - id: comments
   translation: "комментариев" 
+
+# Related posts
+- id: seeAlso
+  translation: "Смотрите также"

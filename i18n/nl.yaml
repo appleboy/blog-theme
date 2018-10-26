@@ -68,3 +68,7 @@
   translation: "Laat"
 - id: comments
   translation: "reacties zien" 
+
+# Related posts
+- id: seeAlso
+  translation: "Zie ook"
