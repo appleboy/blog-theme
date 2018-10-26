@@ -62,3 +62,7 @@
   translation: "Jouw e-mailadres"
 - id: yourWebsite
   translation: "Jouw website"
+
+# Related posts
+- id: seeAlso
+translation: "Zie ook"

@@ -742,3 +742,8 @@ div.splitbox div.right {
                display:inline-block;
                float:left;}
 }
+
+/* Related posts */
+h4.see-also {
+  margin-top: 20px
+}
