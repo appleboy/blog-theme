@@ -767,3 +767,45 @@ div.splitbox div.right {
 h4.see-also {
   margin-top: 20px;
 }
+
+/*************************************************
+ *  Sharing
+ **************************************************/
+ .share-box {
+  float: right;
+}
+ ul.share {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ ul.share li {
+  display: inline-flex;
+  margin-right: 5px;
+}
+ ul.share li:last-of-type {
+  margin-right: 0;
+}
+ ul.share li .fa {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  transition: all 150ms ease-in-out;
+  color: #fff;
+}
+ ul.share li a {
+  background-color: #b5c6ce;
+  display: block;
+  border-radius: 50%;
+  text-decoration: none !important;
+  margin: 0;
+}
+ ul.share li:hover .fa {
+  transform: scale(1.4)
+}
