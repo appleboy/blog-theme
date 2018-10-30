@@ -725,21 +725,17 @@ div.splitbox {width:100%; overflow:auto;}
 
 div.splitbox div.left {
                width:48%;
-               display:inline-block;
                float:left;}
 div.splitbox div.right {
                width:48%;
-               display:inline-block;
                float:right;}
 
 @media only screen and (max-width: 600px) {
 div.splitbox div.left {
                width:100%;
-               display:inline-block;
                float:left;}
 div.splitbox div.right {
                width:100%;
-               display:inline-block;
                float:left;}
 }
 
