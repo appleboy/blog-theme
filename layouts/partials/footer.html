@@ -116,7 +116,7 @@
 <!-- End Piwik Code -->
 {{ end }}
 
-{{ if (.Site.Params.delayDisqus) (and .Site.DisqusShortname) }}
+{{ if and .Site.Params.delayDisqus .Site.DisqusShortname }}
 <!-- Delayed Disqus -->
 <script type="text/javascript">
 $(function(){
