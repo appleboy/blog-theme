@@ -1,3 +1,4 @@
+{{ if or .Params.socialShare (and .Site.Params.socialShare (ne .Params.socialShare false)) }}
 <!-- Social Share Button HTML -->
 <div class="share-box" aria-hidden="true">
     <ul class="share">
@@ -51,3 +52,4 @@
       </li>
     </ul>
   </div>
+  {{ end }}
