@@ -1,28 +1,3 @@
-{{ if .IsHome -}}
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "url": "{{ .Site.BaseURL }}",
-  {{ if .Site.Author.name -}}
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Site.Author.name }}"
-  },
-  {{- end }}
-  {{ if .Site.Params.description -}}
-  "description": "{{ .Site.Params.description }}",
-  {{- end }}
-  {{ if .Site.Params.logo -}}
-  "image": "{{ .Site.Params.logo | absURL }}",
-  {{- end }}
-  {{ with .Site.Copyright -}}
-  "license": "{{ . }}",
-  {{- end }}
-  "name": "{{ .Site.Title }}"
-}
-</script>
-{{- else if .IsPage -}}
 <script type="application/ld+json"> {
   "@context" : "http://schema.org",
   "@type" : "BlogPosting",
@@ -70,4 +45,3 @@
     }
   }
 } </script>
-{{ end }}
