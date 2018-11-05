@@ -8,8 +8,8 @@
               <li>
                 <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa {{ .icon }} fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="{{ .icon }} fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
@@ -23,8 +23,8 @@
             <a href="{{ .Site.RSSLink }}" title="RSS">
             {{ end }}
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>

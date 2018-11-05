@@ -789,7 +789,7 @@ h4.see-also {
  ul.share li:last-of-type {
   margin-right: 0;
 }
- ul.share li .fa {
+ ul.share li .fab {
   display: block;
   width: 30px;
   height: 30px;
@@ -806,6 +806,6 @@ h4.see-also {
   text-decoration: none !important;
   margin: 0;
 }
- ul.share li:hover .fa {
+ ul.share li:hover .fab {
   transform: scale(1.4)
 }
