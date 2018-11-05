@@ -769,9 +769,6 @@ h4.see-also {
 }
 
 /* Sharing */
- .share-box {
-  float: right;
-}
  ul.share {
   display: flex;
   flex-direction: row;
