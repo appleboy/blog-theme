@@ -107,20 +107,15 @@ To add Google Analytics, simply sign up to [Google Analytics](https://www.google
 
 ### Commit SHA on the footer
 
-If the source of your site is in a Git repo, the SHA corresponding to the commit the site is built from can be shown on the footer. To do so, two environment variables have to be set (`GIT_COMMIT_SHA` and `GIT_COMMIT_SHA_SHORT`) and parameter `commit` has to be defined in the config file:
+If the source of your site is in a Git repo, the SHA corresponding to the commit the site is built from can be shown on the footer. To do so, two site parameters `commit` has to be defined in the config file `config.toml`:
 
 ```
+enableGitInfo = true
 [Params]
   commit = "https://github.com/<username>/<siterepo>/tree/"
 ```
-  
-This can be achieved by running the next command prior to calling Hugo:
 
-```
-  GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD`
-```
-  
-See at [xor-gate/xor-gate.org](https://github.com/xor-gate/xor-gate.org) an example of how to add it to a continuous integration system.
+See at [vincenttam/vincenttam.gitlab.io](https://gitlab.com/vincenttam/vincenttam.gitlab.io) for an example of how to add it to a continuous integration system.
  
 ### Extra shortcodes
 
