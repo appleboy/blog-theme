@@ -143,9 +143,9 @@ Now you just need to create a subdir within the `content/` folder for each
 language and just put stuff inside `page/` and `post/` regular directories.
 ```
 content/      content/      content/  
-└── en        └── br        └── ja 
-    ├── page      ├── page      ├── page 
-    └── post      └── post      └── post 
+└── en/       └── br/       └── ja/ 
+    ├── page/     ├── page/     ├── page/
+    └── post/     └── post/     └── post/
 
 ```
  
