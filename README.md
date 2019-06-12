@@ -124,7 +124,7 @@ See at [xor-gate/xor-gate.org](https://github.com/xor-gate/xor-gate.org) an exam
 
 ### Multilingual
 
-To allow Beautiful Hugo to go multilingual you need to define the languages
+To allow Beautiful Hugo to go multilingual, you need to define the languages
 you want to use inside the `languages` parameter on `config.toml` file, also
 redefining the content dir for each one. Check the `i18n/` folder to see all
 languages available.
@@ -140,7 +140,7 @@ languages available.
 ```
 
 Now you just need to create a subdir within the `content/` folder for each
-language and just put stuff inside `page/` and `post/` regular directory.
+language and just put stuff inside `page/` and `post/` regular directories.
 ```
 content/      content/      content/  
 └── en        └── br        └── ja 
