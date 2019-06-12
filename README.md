@@ -121,6 +121,32 @@ This can be achieved by running the next command prior to calling Hugo:
 ```
   
 See at [xor-gate/xor-gate.org](https://github.com/xor-gate/xor-gate.org) an example of how to add it to a continuous integration system.
+
+### Multilingual
+
+To allow Beautiful Hugo to go Multiliguagual you need to define the languages
+you want to use inside the `languages` param on `config.toml` file:
+
+```toml
+[languages]
+  [languages.en] 
+    contentDir = "content/en"
+  [languages.ja]
+    contentDir = "content/ja"
+  [languages.br]
+    contentDir = "content/pt"
+```
+
+Now you just need to create a subdir within the `content/` folder for each
+language you want to use and just put stuff inside `page/` and `post/` regular 
+dirs.
+```
+content/      content/      content/  
+└── en        └── br        └── ja 
+    ├── page      ├── page      ├── page 
+    └── post      └── post      └── post 
+
+```
  
 ### Extra shortcodes
 
