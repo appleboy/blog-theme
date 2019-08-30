@@ -35,6 +35,12 @@ title = "Twitter"
 icon = "fab fa-twitter"
 
 [[social_icons]]
+id = "slack"
+url = "https://%s.slack.com/"
+title = "Slack"
+icon = "fab fa-slack"
+
+[[social_icons]]
 id = "reddit"
 url = "https://reddit.com/u/%s"
 title = "Reddit"
