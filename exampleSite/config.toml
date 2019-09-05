@@ -66,6 +66,7 @@ pygmentsCodefencesGuessSyntax = true
   paypal = "username"
   telegram = "username"
   500px = "username"
+  weibo = "username"
 
 [[menu.main]]
     name = "Blog"
