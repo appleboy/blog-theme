@@ -11,7 +11,7 @@
   {{ if .Site.Params.wordCount }}
     &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;{{ .WordCount }}&nbsp;{{ i18n "words" }}
   {{ end }}
-  {{ if .Site.Params.showAuthor }}
+  {{ if not .Site.Params.hideAuthor }}
     {{ if .Params.author }}
       &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;{{ .Params.author | safeHTML }}
     {{ else }}
