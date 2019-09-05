@@ -11,12 +11,6 @@ title = "Facebook"
 icon = "fab fa-facebook"
 
 [[social_icons]]
-id = "googleplus"
-url = "https://plus.google.com/%s"
-title = "Google+"
-icon = "fab fa-google-plus"
-
-[[social_icons]]
 id = "github"
 url = "https://github.com/%s"
 title = "GitHub"
