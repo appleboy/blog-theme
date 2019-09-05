@@ -22,6 +22,9 @@
                 {{ if .Params.image }}
                 <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-title" />
                 {{ end }}
+                {{ if .Params.video }}
+                <video src="{{ .Params.video }}" loop autoplay muted playsinline class="img-title" />
+                {{ end }}
               </a>
 
               {{ partial "post_meta.html" . }}
