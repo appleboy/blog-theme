@@ -11,12 +11,6 @@ title = "Facebook"
 icon = "fab fa-facebook"
 
 [[social_icons]]
-id = "googleplus"
-url = "https://plus.google.com/%s"
-title = "Google+"
-icon = "fab fa-google-plus"
-
-[[social_icons]]
 id = "github"
 url = "https://github.com/%s"
 title = "GitHub"
@@ -110,7 +104,7 @@ icon = "fas fa-gamepad"
 id = "keybase"
 url = "https://keybase.io/%s"
 title = "Keybase"
-icon = "fas fa-key"
+icon = "fab fa-keybase"
 
 [[social_icons]]
 id = "vk"
@@ -141,3 +135,9 @@ id = "mastodon"
 url = "https://%s"
 title = "Mastodon"
 icon = "fab fa-mastodon"
+
+[[social_icons]]
+id = "weibo"
+url = "https://weibo.com/%s"
+title = "Weibo"
+icon = "fab fa-weibo"
