@@ -69,6 +69,7 @@ pygmentsCodefencesGuessSyntax = true
   telegram = "username"
   500px = "username"
   weibo = "username"
+  mastodon = "url"
 
 [[menu.main]]
     name = "Blog"
