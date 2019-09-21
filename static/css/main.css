@@ -764,7 +764,7 @@ div.splitbox div.right {
     padding: 15px 25px;
   }
 }
-.disqus-comments button:hover,
+.disqus-comments button:hover, 
 .disqus-comments button:focus {
   color: #FFF;
   background: #0085a1;
@@ -811,22 +811,4 @@ h4.see-also {
 }
  ul.share li:hover .fab {
   transform: scale(1.4)
-}
-
-/* --- Archives --- */
-
-.archive .archive-post {
-  padding: 3px 20px;
-  padding-top: 3px;
-  padding-right: 20px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  border-left: 1px solid #cacaca;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: rgb(202, 202, 202);
-}
-
-.archive .archive-post .archive-post-time {
-  margin-right: 10px;
 }
