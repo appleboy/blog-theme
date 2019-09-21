@@ -370,14 +370,19 @@ footer .theme-by {
   margin-bottom: 10px;
 }
 .post-preview .post-meta,
-.post-heading .post-meta {
+.post-heading .post-meta,
+.page-meta {
   color: #808080;
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
 }
+.page-meta {
+  align-self: center;
+}
 .post-preview .post-meta a,
-.post-heading .post-meta a {
+.post-heading .post-meta a,
+.page-meta a {
   color: #404040;
   text-decoration: none;
 }
@@ -756,7 +761,7 @@ div.splitbox div.right {
     padding: 15px 25px;
   }
 }
-.disqus-comments button:hover, 
+.disqus-comments button:hover,
 .disqus-comments button:focus {
   color: #FFF;
   background: #0085a1;
@@ -803,4 +808,22 @@ h4.see-also {
 }
  ul.share li:hover .fab {
   transform: scale(1.4)
+}
+
+/* --- Archives --- */
+
+.archive .archive-post {
+  padding: 3px 20px;
+  padding-top: 3px;
+  padding-right: 20px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  border-left: 1px solid #cacaca;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgb(202, 202, 202);
+}
+
+.archive .archive-post .archive-post-time {
+  margin-right: 10px;
 }
