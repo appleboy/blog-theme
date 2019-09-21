@@ -68,6 +68,7 @@ pygmentsCodefencesGuessSyntax = true
   paypal = "username"
   telegram = "username"
   500px = "username"
+  codepen = "username"
   mastodon = "url"
   kaggle = "username"
   weibo = "username"
