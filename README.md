@@ -121,6 +121,33 @@ enableGitInfo = true
 ```
 
 See at [vincenttam/vincenttam.gitlab.io](https://gitlab.com/vincenttam/vincenttam.gitlab.io) for an example of how to add it to a continuous integration system.
+
+### Multilingual
+
+To allow Beautiful Hugo to go multilingual, you need to define the languages
+you want to use inside the `languages` parameter on `config.toml` file, also
+redefining the content dir for each one. Check the `i18n/` folder to see all
+languages available.
+
+```toml
+[languages]
+  [languages.en] 
+    contentDir = "content/en" # English
+  [languages.ja]
+    contentDir = "content/ja" # Japanese
+  [languages.br]
+    contentDir = "content/br" # Brazilian Portuguese
+```
+
+Now you just need to create a subdir within the `content/` folder for each
+language and just put stuff inside `page/` and `post/` regular directories.
+```
+content/      content/      content/  
+└── en/       └── br/       └── ja/ 
+    ├── page/     ├── page/     ├── page/
+    └── post/     └── post/     └── post/
+
+```
  
 ### Extra shortcodes
 
