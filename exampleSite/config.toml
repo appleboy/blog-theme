@@ -68,8 +68,9 @@ pygmentsCodefencesGuessSyntax = true
   paypal = "username"
   telegram = "username"
   500px = "username"
-  weibo = "username"
   mastodon = "url"
+  weibo = "username"
+  slack = "username"
 
 [[menu.main]]
     name = "Blog"
