@@ -1,4 +1,4 @@
-# Beautiful Hugo - A port of Beautiful Jekyll Theme
+# Beautiful Hugo - An adaptation of the Beautiful Jekyll theme
 
 ![Beautiful Hugo Theme Screenshot](https://github.com/halogenica/beautifulhugo/blob/master/images/screenshot.png)
 
@@ -177,7 +177,7 @@ This is column 2.
 
 ## About
 
-This is a port of the Jekyll theme [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/) by [Dean Attali](https://deanattali.com/aboutme#contact). It supports most of the features of the original theme.
+This is an adaptation of the Jekyll theme [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/) by [Dean Attali](https://deanattali.com/aboutme#contact). It supports most of the features of the original theme, and many new features. It has diverged from the Jekyll theme over time, with years of community updates.
 
 ## License
 
