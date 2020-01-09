@@ -65,9 +65,9 @@
 
 # Delayed Disqus
 - id: show
-  translation: "Laat"
+  translation: "Laat zien"
 - id: comments
-  translation: "reacties zien" 
+  translation: "reacties"
 
 # Related posts
 - id: seeAlso
