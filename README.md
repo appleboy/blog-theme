@@ -5,6 +5,7 @@ This project was forked from [halogenica/beautifulhugo](https://github.com/halog
 ## New Feature
 
 * [X] [d5f4dc0](https://github.com/appleboy/blog-theme/commit/d5f4dc0) Add shortcode: speakerdeck
+* [X] [5d6ca1e](https://github.com/appleboy/blog-theme/commit/5d6ca1e) Support TOC (Table of Contents)
 
 ## Beautiful Hugo
 
