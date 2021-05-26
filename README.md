@@ -2,6 +2,10 @@
 
 This project was forked from [halogenica/beautifulhugo](https://github.com/halogenica/beautifulhugo) and add some new feature.
 
+## New Feature
+
+* [X] Add shortcode: speakerdeck
+
 ## Beautiful Hugo
 
 An adaptation of the Beautiful Jekyll theme
