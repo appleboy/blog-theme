@@ -50,6 +50,22 @@ var main = {
         }
     });
 
+    // back to top event
+    const $backToTop = $('#back-to-top');
+    if ($toc.length) {
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+          $backToTop.fadeIn(1000);
+        } else {
+          $backToTop.fadeOut(1000);
+        }
+      });
+    }
+
+    $backToTop.click(function() {
+      $('body,html').animate({scrollTop: 0});
+    });
+
     // On mobile, hide the avatar when expanding the navbar menu
     $('#main-navbar').on('show.bs.collapse', function () {
       $(".navbar").addClass("top-nav-expanded");
