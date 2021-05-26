@@ -15,16 +15,16 @@
         {{ range .Site.Menus.main.ByWeight }}
           {{ if .HasChildren }}
             <li class="navlinks-container">
-              <a class="navlinks-parent">{{ .Name }}</a>
+              <a class="navlinks-parent">{{ .Pre }} {{ .Name }}</a>
               <div class="navlinks-children">
                 {{ range .Children }}
-                  <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                  <a href="{{ .URL | relLangURL }}">{{ .Pre }} {{ .Name }}</a>
                 {{ end }}
               </div>
             </li>
           {{ else }}
             <li>
-              <a title="{{ .Name }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
+              <a title="{{ .Name }}" href="{{ .URL  | relLangURL }}">{{ .Pre }} {{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="container" role="main">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="col-md-10 col-md-offset-1">
       {{ partial "toc" . }}
       <article role="main" class="blog-post">
         {{ .Content }}
@@ -31,7 +31,7 @@
           {{ if $.Scratch.Get "has_related" }}
                   <h4 class="see-also">{{ i18n "seeAlso" }}</h4>
                   <ul>
-                {{ $num_to_show := .Site.Params.related_content_limit | default 5 }}
+                {{ $num_to_show := .Site.Params.related_content_limit | default 10 }}
                 {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
                     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
                 {{ end }}
