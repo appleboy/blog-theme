@@ -4,7 +4,7 @@ This project was forked from [halogenica/beautifulhugo](https://github.com/halog
 
 ## New Feature
 
-* [X] [d5f4dc0](https://github.com/appleboy/blog-theme/commit/d5f4dc014998fa5c5d4a3b1083483f7801493f5e) Add shortcode: speakerdeck
+* [X] [d5f4dc0](https://github.com/appleboy/blog-theme/commit/d5f4dc0) Add shortcode: speakerdeck
 
 ## Beautiful Hugo
 

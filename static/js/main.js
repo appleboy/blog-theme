@@ -6,6 +6,41 @@ var main = {
   numImgs : null,
 
   init : function() {
+    const SPACING = 100;
+    const $toc = $('#TableOfContents');
+    const $footer = $('.post-footer');
+
+    if ($toc.length) {
+      const minScrollTop = $toc.offset().top - SPACING;
+      const maxScrollTop = $footer.offset().top - $toc.height() - SPACING;
+
+      const tocState = {
+        start: {
+          'position': 'absolute',
+        },
+        process: {
+          'position': 'fixed',
+          'top': SPACING,
+        },
+        end: {
+          'position': 'absolute',
+          'top': maxScrollTop,
+        },
+      };
+
+      $(window).scroll(function() {
+        const scrollTop = $(window).scrollTop();
+
+        if (scrollTop < minScrollTop) {
+          $toc.css(tocState.start);
+        } else if (scrollTop > maxScrollTop) {
+          $toc.css(tocState.end);
+        } else {
+          $toc.css(tocState.process);
+        }
+      });
+    }
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
