@@ -10,6 +10,7 @@ This project was forked from [halogenica/beautifulhugo](https://github.com/halog
 * [X] [6439fd7](https://github.com/appleboy/blog-theme/commit/6439fd7) support site parameter: share_img
 * [X] [dd89e73](https://github.com/appleboy/blog-theme/commit/dd89e73) support archive template
 * [X] [abda9ea](https://github.com/appleboy/blog-theme/commit/abda9ea) update syntax and blog post CSS
+* [X] [70978ad](https://github.com/appleboy/blog-theme/commit/70978ad) update template layout
   
 ## Beautiful Hugo
 
