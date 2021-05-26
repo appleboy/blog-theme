@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #404040;
   position: relative;
   background: #FFF;
@@ -16,10 +16,10 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-.container[role=main] {
+  .container[role=main] {
     margin-left: 0;
     margin-right: 0;
-}
+  }
 }
 
 p {
@@ -144,7 +144,7 @@ img {
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
@@ -431,8 +431,8 @@ footer .theme-by {
 .blog-tags {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #999;
-  font-size: 15px;
-  margin-bottom: 30px;
+  font-size: 1em;
+  margin: 30px 0px;
 }
 
 .blog-tags:before {
@@ -679,6 +679,7 @@ h4.panel-title > span.badge {
 
 table {
   padding: 0;
+  margin: 15px 0px;
 }
 table tr {
   border-top: 1px solid #cccccc;
@@ -960,4 +961,35 @@ h4.see-also {
 .archive .archive-post .archive-post-time {
   margin-right: 10px;
   color: #8a8a8a;
+}
+
+.blog-post h2, .blog-post h3 {
+  border-bottom: 1px solid #ddd;
+  margin: 1em 0em;
+  padding-bottom: 10px;
+}
+
+.blog-post h2::before {
+  content: "|";
+  font-weight: bolder;
+  margin-right: .5rem;
+  color: #2d96bd;
+  font-size: 1.3em;
+}
+
+.blog-post h3::before {
+  content: "|";
+  font-weight: bolder;
+  margin-right: .5rem;
+  color: #cc480b;
+  font-size: 1.3em;
+}
+
+.blog-post li {
+  margin: .5rem 0 0 2rem;
+  line-height: 1.476;
+}
+
+.highlight {
+  margin: 20px 0px;
 }
