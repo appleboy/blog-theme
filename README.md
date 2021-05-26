@@ -1,4 +1,10 @@
-# Beautiful Hugo - An adaptation of the Beautiful Jekyll theme
+# Blog Theme
+
+This project was forked from [halogenica/beautifulhugo](https://github.com/halogenica/beautifulhugo) and add some new feature.
+
+## Beautiful Hugo
+
+An adaptation of the Beautiful Jekyll theme
 
 ![Beautiful Hugo Theme Screenshot](https://github.com/halogenica/beautifulhugo/blob/master/images/screenshot.png)
 
