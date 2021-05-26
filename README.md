@@ -7,7 +7,8 @@ This project was forked from [halogenica/beautifulhugo](https://github.com/halog
 * [X] [d5f4dc0](https://github.com/appleboy/blog-theme/commit/d5f4dc0) Add shortcode: speakerdeck
 * [X] [5d6ca1e](https://github.com/appleboy/blog-theme/commit/5d6ca1e) Support TOC (Table of Contents)
 * [X] [ae4b67e](https://github.com/appleboy/blog-theme/commit/ae4b67e) Add back to top UI
-* [X] [6439fd7](https://github.com/appleboy/blog-theme/commit/6439fd7) upport site parameter: share_img
+* [X] [6439fd7](https://github.com/appleboy/blog-theme/commit/6439fd7) support site parameter: share_img
+* [X] [dd89e73](https://github.com/appleboy/blog-theme/commit/dd89e73) support archive template
 
 ## Beautiful Hugo
 
