@@ -1,4 +1,6 @@
-<pre class="mermaid">
-  {{ .Inner | htmlEscape | safeHTML }}
-</pre>
+<div style="display: flex; justify-content: center;">
+  <pre class="mermaid">
+    {{ .Inner | htmlEscape | safeHTML }}
+  </pre>
+</div>
 {{ .Page.Store.Set "hasMermaid" true }}
