@@ -10,9 +10,6 @@
     {{ partial "footer.html" . }}
     {{ block "footer" . }}{{ end }}
     {{ if .Store.Get "hasMermaid" }}
-    <style>
-      .mermaid svg { font-size: 30px !important; }
-    </style>
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
       mermaid.initialize({ startOnLoad: true });
