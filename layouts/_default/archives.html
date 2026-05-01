@@ -3,10 +3,10 @@
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <section id="archive" class="archive">
-      {{ range (.Site.RegularPages.GroupByDate "2006") }}
+      {{ range ((where .Site.RegularPages "Section" "posts").GroupByDate "2006") }}
         <h2><i class="fas fa-tag" aria-hidden="true"></i> {{ .Key }}</h2>
         <ul class="archive-list">
-        {{ range (where .Pages "Type" "post") }}
+        {{ range .Pages }}
             <li class="archive-post">
               <span class="archive-post-time">
                 {{ .PublishDate.Format "2006-01-02" }}
