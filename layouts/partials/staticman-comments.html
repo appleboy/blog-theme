@@ -2,8 +2,8 @@
 
   {{ $slug := replace .RelPermalink "/" "" }}
 
-  {{ if .Site.Data.comments }}
-    {{ $comments := index $.Site.Data.comments $slug }}
+  {{ if hugo.Data.comments }}
+    {{ $comments := index hugo.Data.comments $slug }}
     {{ if $comments }}
       {{ if gt (len $comments) 1  }}
         <h3>{{ len $comments  }} {{ i18n "moreComment" }}</h3>
@@ -16,7 +16,7 @@
 
 
     {{ $.Scratch.Set "hasComments" 0 }}
-    {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
+    {{ range $index, $comments := (index hugo.Data.comments $slug ) }}
       {{ if not .parent }}
         {{ $.Scratch.Add "hasComments" 1 }}
         <article id="comment-{{ $.Scratch.Get "hasComments" }}" class="static-comment">

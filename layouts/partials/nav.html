@@ -29,23 +29,23 @@
           {{ end }}
         {{ end }}
 
-        {{ if gt (len site.Languages) 1 }}
-          {{ if ge (len .Site.Languages) 3 }}
+        {{ if gt (len hugo.Sites) 1 }}
+          {{ if ge (len hugo.Sites) 3 }}
             <li class="navlinks-container">
               <a class="navlinks-parent">{{ i18n "languageSwitcherLabel" }}</a>
               <div class="navlinks-children">
-                {{ range .Site.Languages }}
-                  {{ if not (eq .Lang $.Site.Language.Lang) }}
-                  <a href="/{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+                {{ range hugo.Sites }}
+                  {{ if not (eq .Language.Lang $.Site.Language.Lang) }}
+                  <a href="{{ .Home.RelPermalink }}" lang="{{ .Language.Lang }}">{{ default .Language.Lang .Language.LanguageName }}</a>
                   {{ end }}
                 {{ end }}
               </div>
             </li>
           {{ else }}
             <li>
-              {{ range .Site.Languages }}
-                {{ if not (eq .Lang $.Site.Language.Lang) }}
-                  <a href="/{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+              {{ range hugo.Sites }}
+                {{ if not (eq .Language.Lang $.Site.Language.Lang) }}
+                  <a href="{{ .Home.RelPermalink }}" lang="{{ .Language.Lang }}">{{ default .Language.Lang .Language.LanguageName }}</a>
                 {{ end }}
               {{ end }}
             </li>
